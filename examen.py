@@ -11,6 +11,12 @@ bienvenido = Label(miFrame, text="BIENVENIDO")
 bienvenido.grid(row=0, column=0)
 bienvenido.config(font=('Arial', 16))
 
+nombre = StringVar()
+apellido = StringVar()
+dia = IntVar()
+mes = IntVar()
+anio = IntVar()
+
 lblnombre= Label(miFrame, text="Nombre:")
 lblnombre.grid(row=1, column=0)
 lblnombre.config(padx=10, pady=10)
@@ -28,6 +34,8 @@ lbldia.grid(row=3, column=0)
 lbldia.config(padx=10, pady=10)
 txtDia=Entry(miFrame, textvariable =dia)
 txtDia.grid(row=3, column=1)
+
+
 
 btnFuncion1 = Button(miFrame, text="Función 1")
 btnFuncion1.grid(row=6, column=0)
