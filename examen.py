@@ -17,6 +17,14 @@ dia = IntVar()
 mes = IntVar()
 anio = IntVar()
 
+def binario():
+        dia=int(dia.get())
+        mes=int(mes.get())
+        anio=int(anio.get())
+        bindia=format(dia, '0b' )
+        binmes=format(mes, '0b')
+        binanio=format(anio, '0b')
+
 lblnombre= Label(miFrame, text="Nombre:")
 lblnombre.grid(row=1, column=0)
 lblnombre.config(padx=10, pady=10)
@@ -41,7 +49,7 @@ lblanio.config(padx=10, pady=10)
 txtanio=Entry(miFrame, textvariable =anio)
 txtanio.grid(row=5, column=1)
 
-btnFuncion1 = Button(miFrame, text="Función 1")
+btnFuncion1 = Button(miFrame, text="Función 1",command=binario)
 btnFuncion1.grid(row=6, column=0)
 btnFuncion1.config(padx=10, pady=10)
 btnFuncion2 = Button(miFrame, text = "Función 2", command=conteoDias)
