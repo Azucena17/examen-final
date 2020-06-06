@@ -23,6 +23,12 @@ lblapellido.config(padx=10, pady=10)
 txtApellido=Entry(miFrame, textvariable =apellido)
 txtApellido.grid(row=2, column=1)
 
+lbldia=Label(miFrame, text="Día: ")
+lbldia.grid(row=3, column=0)
+lbldia.config(padx=10, pady=10)
+txtDia=Entry(miFrame, textvariable =dia)
+txtDia.grid(row=3, column=1)
+
 btnFuncion1 = Button(miFrame, text="Función 1")
 btnFuncion1.grid(row=6, column=0)
 btnFuncion1.config(padx=10, pady=10)
