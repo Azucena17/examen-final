@@ -35,7 +35,11 @@ lbldia.config(padx=10, pady=10)
 txtDia=Entry(miFrame, textvariable =dia)
 txtDia.grid(row=3, column=1)
 
-
+lblanio=Label(miFrame, text="Año: ")
+lblanio.grid(row=5, column=0)
+lblanio.config(padx=10, pady=10)
+txtanio=Entry(miFrame, textvariable =anio)
+txtanio.grid(row=5, column=1)
 
 btnFuncion1 = Button(miFrame, text="Función 1")
 btnFuncion1.grid(row=6, column=0)
@@ -52,3 +56,10 @@ btnFuncion4.config(padx=10, pady=10)
 btnFuncion5 = Button(miFrame, text = "Función 5")
 btnFuncion5.grid(row=8, column=0)
 btnFuncion5.config(padx=10, pady=10)
+
+lblResp=Label(miFrame, text="Respuesta:")
+lblResp.grid(row=9, column=0)
+lblResp.config(padx=10, pady=10)
+lblR=Label(miFrame)
+lblR.grid(row=10, column=0)
+lblR.config(padx=10, pady=10)
